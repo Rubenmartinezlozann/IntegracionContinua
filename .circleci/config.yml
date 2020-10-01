@@ -13,3 +13,64 @@ jobs:
           name: Which bundler?
           command: bundle -v
       - ruby/bundle-install
+
+
+- run:
+
+
+
+
+
+name: build dependences
+
+
+
+
+
+command: bundle install
+
+
+
+
+
+ 
+
+
+
+
+
+- run:
+
+
+
+
+
+name: build the jekyll site
+
+
+
+
+
+command: bundle exec jekyll build
+
+
+
+
+
+ 
+
+
+
+
+
+- run:
+
+
+
+
+
+print: Print the Current Time
+
+
+
+command: date
